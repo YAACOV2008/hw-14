@@ -1,9 +1,0 @@
----
-- hosts: all
-  tasks:
-   - name: install zip and vim
-     apt:
-         name:
-          - zip
-          - vim 
-         state: present
