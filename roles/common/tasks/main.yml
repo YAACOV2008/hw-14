@@ -5,3 +5,11 @@
       - zip
       - vim
     state: present
+- name: Copy hello.txt content to /tmp/test1
+  copy:
+    src: hello.txt
+    dest: /tmp/test1
+- name: Deploy hostname template to /tmp/test2
+  template:
+    src: hostname_template.j2
+    dest: /tmp/test2
